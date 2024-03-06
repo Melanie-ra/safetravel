@@ -15,6 +15,7 @@
   --greyBg :hsl(0,0%,96%);
   --greyText:rgb(190,190,190);
   --inputColor:hsl(330,12%,97%);
+  /* box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45); */
 }
 a{
  text-decoration: none;
@@ -54,11 +55,14 @@ li{
   color: var(--whiteColor);
   font-weight: 500;
 }
+.btn:hover{
+  background: var(--HoverColor);
+}
 .btn:hover a{
   color: var(--whiteColor);
 }
 .secIntro{
-  max-width: 70%;
+  max-width: 80%;
   text-align: center;
   margin: 0 auto 2rem;
 
@@ -80,3 +84,23 @@ img,video{
 input {
   font-size: 100%;
 }
+
+
+@media screen and (min-width:556px){
+  .mainContent, .singlePost{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width:884px){
+  .mainContent{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (min-width:1240px){
+  .container{
+    width: 75% !important;
+    margin: auto !important;
+  }
+}
+
