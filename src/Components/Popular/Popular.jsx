@@ -5,6 +5,7 @@ import { BsArrowLeftShort } from 'react-icons/bs'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { BsDot } from "react-icons/bs";
 
+import img from '../../Assets/image (1).jpg'
 
 const Popular = () => {
   return (
@@ -28,7 +29,7 @@ const Popular = () => {
               <div className="singleDestination">
                 <div className="destImage">
 
-                  <img src="" alt="Image title" />
+                  <img src={img} alt="Image title" />
                   
                   <div className="overlayInfo">
                     <h3>Some text</h3>
@@ -50,8 +51,9 @@ const Popular = () => {
                       </h6>
                       <span className='flex'>
                         <span className="dot">
-                        <BsDot className="icon" />
+                          <BsDot className="icon" />
                         </span>
+                        Dot
                       </span>
                   </div>
                 </div>
