@@ -10,9 +10,6 @@
   --inputColor:hsl(330,12%,97%);
 }
 
-.popular {
-  padding-top: 15rem;
-}
 .popular .secContainer .secHeader {
   flex-direction: column;
   align-items: flex-start;
@@ -25,4 +22,27 @@
 }
 .popular .secContainer .secHeader .textDiv p {
   font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.popular .secContainer .secHeader .iconsDiv {
+  gap: 0.5rem;
+}
+.popular .secContainer .secHeader .iconsDiv .icon {
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+.popular .secContainer .secHeader .iconsDiv .icon:hover {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .secContainer .secHeader .iconsDiv .leftIcon {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .secContainer .secHeader .iconsDiv .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--blackColor);
 }/*# sourceMappingURL=popular.css.map */
