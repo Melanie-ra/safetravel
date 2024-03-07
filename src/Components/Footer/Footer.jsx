@@ -68,10 +68,10 @@ const Footer = () => {
 
         <div className="footerLinks">
           <span className="linkTitle">
-            Contact Us
+            Contactanos
           </span>
-          <span className='phone'>+44 565 6644</span>
-          <span className='email'>quechuchafue@hotmal.com</span>
+          <span className='phone'>+51 936 572 649</span>
+          <span className='email'>2021186@unica.edu.pe</span>
         </div>
 
       </div>
