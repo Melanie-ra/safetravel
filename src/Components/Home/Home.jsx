@@ -20,31 +20,31 @@ const Home = () => {
           Planifique su viaje con SafeTravel
           </h1>
 
-          <p className="subTitle">
+          <p data-aos="fade-up" data-aos-duration="2500" className="subTitle">
           ¡Viaja a tu ciudad favorita de manera respetuosa con el medio ambiente!
           </p>
-          <button className='btn'>
+          <button data-aos="fade-up" data-aos-duration="3000" className='btn'>
             <a href="#">Explora Ahora</a>
           </button>
         </div>
 
         <div className="homeCard grid">
 
-          <div className="locationDiv">
+          <div data-aos="fade-right" data-aos-duration="2000" className="locationDiv">
             <label htmlFor="location">Destino</label>
             <input type="text" placeholder='DreamDestination'/>
           </div>
 
-          <div className="distDiv">
+          <div data-aos="fade-right" data-aos-duration="2500" className="distDiv">
             <label htmlFor="distance">Localidad Actual</label>
             <input type="text" placeholder='11/Meters'/>
           </div>
 
-          <div className="priceDiv">
+          <div  data-aos="fade-right" data-aos-duration="3000" className="priceDiv">
             <label htmlFor="price">Monto</label>
             <input type="text" placeholder='$1400 la hora xd'/>
           </div>
-          <button className='btn'>
+          <button data-aos="fade-left" data-aos-duration="3000" className='btn'>
             Buscar
           </button>
 

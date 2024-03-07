@@ -1,17 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './popular.css'
 
 import { BsArrowLeftShort } from 'react-icons/bs'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { BsDot } from "react-icons/bs";
 
-import img from '../../Assets/image (1).jpg'
+
 import img2 from '../../Assets/image (21).jpg'
 import img3 from '../../Assets/image (41).jpg'
 import img4 from '../../Assets/image (51).jpg'
 import img5 from '../../Assets/image (61).jpg'
-import img6 from '../../Assets/image (71).jpg'
-import img7 from '../../Assets/image (81).jpg'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Data = [
   {
@@ -49,28 +50,34 @@ const Data = [
 ]
 
 const Popular = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
+
+
   return (
     <section className='popular section container' style={ {paddingTop: "15rem"}}>
       <div className="secContainer">
 
-          <div className="secHeader flex">
-            <div className="textDiv">
+        <div className="secHeader flex">
+            <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
               <h2 className="secTitle">
                 Popular Destination</h2>
               <p>From Historical cities to natural sectaculars, come see the best of the world!</p>
             </div>
         
-            <div className="iconsDiv flex">
+            <div data-aos="fade-left" data-aos-duration="2500"className="iconsDiv flex">
                 <BsArrowLeftShort className="icon leftIcon"/>
                 <BsArrowRightShort className="icon"/>
             </div>
-          </div>
+        </div>
 
-          <div className="mainContent grid">
+        <div className="mainContent grid">
               {
                 Data.map(({id,imgSrc,destTitle,location,grade})=>{
                   return(
-                    <div className="singleDestination">
+                  <div data-aos="fade-up" className="singleDestination">
                     <div className="destImage">
     
                       <img src={imgSrc} alt="Image title" />
@@ -85,6 +92,9 @@ const Popular = () => {
                       </div>
     
                     </div>
+
+
+
                     <div className="destFooter">
                       <div className="number">
                         0{id}
@@ -106,12 +116,7 @@ const Popular = () => {
                   )
                 })
               }
-              
-              
-
-
-          </div>
-
+        </div>
       </div>
     </section>
   )
