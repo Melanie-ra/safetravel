@@ -1,33 +1,43 @@
-import React from 'react';
-import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Home from './Components/Home/Home'
-import Popular from './Components/Popular/Popular';
-import Offers from './Components/Offers/Offers';
-import About from './Components/About/About';
-import Footer from './Components/Footer/Footer';
-import Blog from './Components/Blog/Blog';
+// import React from 'react';
+// import './App.css'
+// import Navbar from './Components/Navbar/Navbar'
+// import Home from './Components/Home/Home'
+// import Popular from './Components/Popular/Popular';
+// import Offers from './Components/Offers/Offers';
+// import About from './Components/About/About';
+// import Footer from './Components/Footer/Footer';
+// import Blog from './Components/Blog/Blog';
 
-import { Router } from 'react-router-dom';
-import { useState } from 'react';
+// const App = () => {
+//   return (
+//     <>
+//     <Navbar/>
+//     <Home/>
+//     <Popular/>
+//     <Offers/>
+//     <About/>
+//     <Blog/>
+//     <Footer/>
+//     </>
+//   )
+// }
 
-const SearchPage = () =>{
+// export default App
 
- //https://www.youtube.com/watch?v=iPNt12IdbCU
-}
-
+import React from 'react'
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import AppRoutes from './AppRoutes';
 const App = () => {
+
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <Popular/>
-    <Offers/>
-    <About/>
-    <Blog/>
-    <Footer/>
+          <BrowserRouter>
+        <div className="App">
+          <AppRoutes />
+        </div>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App
