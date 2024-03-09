@@ -8,6 +8,14 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Blog from './Components/Blog/Blog';
 
+import { Router } from 'react-router-dom';
+import { useState } from 'react';
+
+const SearchPage = () =>{
+
+ //https://www.youtube.com/watch?v=iPNt12IdbCU
+}
+
 const App = () => {
   return (
     <>
